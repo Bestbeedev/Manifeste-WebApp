@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+body{
+  font-family: 'Poppins';
+  background: linear-gradient(-25deg, #242b62  0%, #365487 70%, #4171ac 98%);
+  margin: 0;
+  padding:0;
+  font-size: 13px;
+  @apply h-screen w-screen 
+
+}
+
+.sidebar{
+  background: linear-gradient(-25deg, #2f387987  0%, #486aa5 70%, #4c7fbeee 98%); 
+}
+
+.colorIcon2{
+  color: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+}
+
+.colorIcon3{
+  color: radial-gradient( circle farthest-corner at 10% 20%,  rgba(249,232,51,1) 0%, rgba(250,196,59,1) 100.2% ); ;
+}
+
+.colorIcon1{
+  color: radial-gradient( circle farthest-corner at 10% 20%,  rgba(249,232,51,1) 0%, rgba(250,196,59,1) 100.2% );
+  -webkit-text-fill-color: transparent;
+   display: inline-block;
+}
+
+.buttonStart{
+  background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+
+}
+
+.loginBg{
+  background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+
+}
