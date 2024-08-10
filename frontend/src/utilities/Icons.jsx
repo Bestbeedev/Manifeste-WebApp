@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Icons = ({style,iconType}) => {
+const Icons = ({iconType}) => {
   const styled=''
   return (
     <div className={`${styled}`} >

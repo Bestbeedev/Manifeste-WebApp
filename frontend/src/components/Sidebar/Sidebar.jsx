@@ -19,7 +19,7 @@ const Sidebar = () => {
         <Activites />
         <APropos />
         <Contacts />
-        <div className="bg-[#151d3162] mb-3 mt-3 py-2 rounded-md">
+        <div className="card mb-3 mt-3 py-2 rounded-md">
           <Users />
         </div>
       </div>

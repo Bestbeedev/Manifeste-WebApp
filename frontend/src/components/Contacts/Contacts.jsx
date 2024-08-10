@@ -7,7 +7,7 @@ import { CiFacebook, CiInstagram, CiTwitter, CiYoutube } from 'react-icons/ci';
 const Contacts = () => {
   return (
     <div className='m-3'>
-      <p className='font-semibold text-yellow-400   my-2'>Contacts</p>
+      <p className='font-semibold title  my-2'>Contacts</p>
       <NavLinks icons={<CiFacebook/>} path={'https://facebook.com'} value={'Facebook'}/>
       <NavLinks icons={<CiYoutube />} path={'https://youtube.com'} value={'Youtube'}/>
       <NavLinks icons={<CiInstagram />} path={'https://instagram.com'} value={'Instagram'}/>

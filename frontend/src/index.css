@@ -14,12 +14,20 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
+ 
+}
+
+*{
+  --bg-palette-primaryDark-900: hsl(210, 14%, 7%);
+  --bg-palette-primary-main: hsl(210, 100%, 60%);
+  --bg-palette-primary-400: hsl(210, 100%, 60%);
+  --tw-bg-opacity: 1;
+ 
 }
 
 body{
   font-family: 'Poppins';
-  background: linear-gradient(-25deg, #242b62  0%, #365487 70%, #4171ac 98%);
+  background:hsl(210, 14%, 7%); 
   margin: 0;
   padding:0;
   font-size: 13px;
@@ -27,9 +35,20 @@ body{
 
 }
 
+
 .sidebar{
-  background: linear-gradient(-25deg, #2f387987  0%, #486aa5 70%, #4c7fbeee 98%); 
+  /* background: #191c24; */
+  background-color: rgb(15 23 42/var(--tw-bg-opacity));
 }
+
+.title{
+  color:var(--bg-palette-primary-400) ;
+}
+.card{
+  background: hsla(210, 98%, 49%, 0.72);
+}
+
+
 
 .colorIcon2{
   color: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);

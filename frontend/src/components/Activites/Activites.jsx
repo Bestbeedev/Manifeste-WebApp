@@ -7,10 +7,10 @@ import { CiSaveDown1 } from 'react-icons/ci'
 const Activites = () => {
   return (
     <div className='m-3'>
-        <p className='font-semibold text-yellow-400  my-2'>Activites</p>
-        <NavLinks icons={<RiFolderHistoryLine />} value={'Historique de lecture'} path={'/'}/>
-        <NavLinks icons={<GrFavorite />} value={'Favoris'} path={'/'}/>
-        <NavLinks icons={<CiSaveDown1 />} value={'Telechargement'} path={'/'}/>
+        <p className='font-semibold title my-2'>Activites</p>
+        <NavLinks icons={<RiFolderHistoryLine />} value={'Historique de lecture'} path={'/activities/historique'}/>
+        <NavLinks icons={<GrFavorite />} value={'Favoris'} path={'/activities/favoris'}/>
+        <NavLinks icons={<CiSaveDown1 />} value={'Telechargement'} path={'/activities/telechargement'}/>
     </div>
   )
 }

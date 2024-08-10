@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Buttons = ({onChange,value,styled}) => {
+const Buttons = ({onClick,value,styled}) => {
   return (
-    <button className={`${styled} p-3 rounded-lg shadow-sm`}  onChange={onChange}>
+    <button className={`${styled} p-3 rounded-lg shadow-sm`}  onClick={onClick}>
         {value}
     </button>
   )
