@@ -13,8 +13,8 @@ import Telechargement from "./components/Activites/Telechargement/Telechargement
 import AlaUne from "./components/Enseignements/AlaUne/AlaUne.jsx";
 import Populaires from "./components/Enseignements/Populaire/Populaires.jsx";
 import Serviteurs from "./components/Predicateurs/Serviteurs/Serviteurs.jsx";
-import Dashboard from "./Pages/Dashboard.jsx";
 import Welcome from "./Pages/Welcome.jsx";
+import Error404 from "./Errors/Error404.jsx";
 import App from "./App.jsx";
 
 export const router = createBrowserRouter([
@@ -23,8 +23,8 @@ export const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: "/dashboard",
-        element: <Dashboard />,
+        path: "/",
+        element: <Welcome />,
       },
       {
         path: "/welcome",
@@ -75,11 +75,11 @@ export const router = createBrowserRouter([
         path: "/predicateurs/serviteurs",
         element: <Serviteurs />,
       },
+      {
+        path: "*",
+        element: <Error404 />,
+      },
     ],
-  },
-  {
-    path: "*",
-    element: <h2>Page not found</h2>,
   },
 ]);
 

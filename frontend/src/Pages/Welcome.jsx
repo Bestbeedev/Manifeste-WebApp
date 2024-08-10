@@ -23,7 +23,7 @@ const Welcome = () => {
 
       <div className="my-2 justify-between items-center space-x-4 flex">
         <div className="flex justify-between space-x-3 items-center">
-          <div className="my-10 card hover:transition-all ease-in-out rounded-md p-4 shadow-lg 
+          <div className="my-10 card hover:transition-all hover:bg-blue-700 hover:border ease-in-out rounded-md p-4 shadow-lg 
           space-x-6 flex-col items-center flex">
             <div>
               <img src={mediaPlayer} className="size-32" />
@@ -37,7 +37,7 @@ const Welcome = () => {
             </div>
           </div>
 
-          <div className="my-10 card hover:transition-all ease-in-out rounded-md p-4 shadow-lg  space-x-6 flex-col items-center flex">
+          <div className="my-10 card hover:transition-all hover:bg-blue-700 hover:border ease-in-out rounded-md p-4 shadow-lg  space-x-6 flex-col items-center flex">
             <div>
               <img src={download} className="size-32" />
             </div>
@@ -50,7 +50,7 @@ const Welcome = () => {
             </div>
           </div>
 
-          <div className="my-10 card hover:transition-all ease-in-out rounded-md p-4 shadow-lg space-x-6 flex-col items-center flex ">
+          <div className="my-10 card hover:transition-all hover:bg-blue-700 hover:border ease-in-out rounded-md p-4 shadow-lg space-x-6 flex-col items-center flex ">
             <div>
               <img src={chats} className="size-32" />
             </div>

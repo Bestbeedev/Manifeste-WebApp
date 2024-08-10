@@ -2,6 +2,7 @@ import React from "react";
 import Sidebar from "../components/Sidebar/Sidebar";
 import { Outlet } from "react-router-dom";
 import SearchBar from "../components/SearchBar/SearchBar";
+import Welcome from "../Pages/Welcome";
 
 const Dashboard = () => {
   return (
@@ -21,7 +22,7 @@ const Dashboard = () => {
             autres
            </div>
         </div>
-       
+        {/* <Welcome/> */}
         <Outlet />
       </div>
     </div>

@@ -15,7 +15,7 @@ const SearchBar = () => {
           value={data}
         />
       </span>
-      <button className="bg-blue-500 p-2 rounded-md 
+      <button className="bg-rose-500 p-2 rounded-md 
       items-center shadow-md" type="submit">
         <Icons
           iconType={<IoSend className=" " size={20} />}
