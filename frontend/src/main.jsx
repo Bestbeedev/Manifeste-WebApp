@@ -16,6 +16,7 @@ import Serviteurs from "./components/Predicateurs/Serviteurs/Serviteurs.jsx";
 import Welcome from "./Pages/Welcome.jsx";
 import Error404 from "./Errors/Error404.jsx";
 import App from "./App.jsx";
+import VideoPlayer from "./components/VideoPlayer/VideoPlayer.jsx";
 
 export const router = createBrowserRouter([
   {
@@ -24,10 +25,6 @@ export const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Welcome />,
-      },
-      {
-        path: "/welcome",
         element: <Welcome />,
       },
       {
@@ -74,6 +71,10 @@ export const router = createBrowserRouter([
       {
         path: "/predicateurs/serviteurs",
         element: <Serviteurs />,
+      },
+      {
+        path: "/videos/media1",
+        element: <VideoPlayer />,
       },
       {
         path: "*",

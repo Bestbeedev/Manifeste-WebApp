@@ -73,3 +73,14 @@ body{
   background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
 
 }
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #2563eb;
+  height: 1vh;
+}
+.activeBtn{
+  @apply bg-blue-600 !important
+}

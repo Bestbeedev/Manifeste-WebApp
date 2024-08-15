@@ -2,7 +2,6 @@ import React from "react";
 import Sidebar from "../components/Sidebar/Sidebar";
 import { Outlet } from "react-router-dom";
 import SearchBar from "../components/SearchBar/SearchBar";
-import Welcome from "../Pages/Welcome";
 
 const Dashboard = () => {
   return (
@@ -10,7 +9,7 @@ const Dashboard = () => {
       <div className="justify-center  h-screen flex flex-col">
         <Sidebar />
       </div>
-      <div className="flex-1  py-4 my-8 sidebar w-full rounded-lg ">
+      <div className="flex-1 overflow-hidden pb-16 py-4 my-8 sidebar w-full rounded-lg ">
         <div className="flex px-10 py-2 justify-evenly gap-2 items-center">
           <div>
             logo
@@ -22,7 +21,6 @@ const Dashboard = () => {
             autres
            </div>
         </div>
-        {/* <Welcome/> */}
         <Outlet />
       </div>
     </div>
