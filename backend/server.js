@@ -1,20 +1,31 @@
-const express = require("express")
-const dotenv=require('dotenv')
-const cors=require('cors')
-const routers=require('./Routes/AuthRoutes')
+const express = require("express");
+const dotenv = require("dotenv");
+dotenv.config();
+const videoRoutes = require("./Routes/VideoPostRoutes");
+const mongoose = require("mongoose");
+const app = express();
 
+//Middleware
+app.use(express.json());
+app.use((res, req, next) => {
+  console.log("Middleware", req.path, res.method);
+  next();
+});
 
-dotenv.config()
-const app = express()
+//Routes
+app.use("/api/videoPost", videoRoutes);
 
-app.use('/',routers)
+//Connect to database mongodb
 
-app.get('/', (req, res) => {
-  res.json({ message: 'Welcome to the API' })
-})
-
-const PORT=process.env.P0RT
-app.listen(PORT,()=>{
-    console.log('Server running at 5500 port');
-})
-
+mongoose
+  .connect(process.env.MONGO_URI)
+  .then(() => {
+    //backend starting
+    const PORT = process.env.P0RT;
+    app.listen(PORT, () => {
+      console.log("Database connected and Server running at 5500 port");
+    });
+  })
+  .catch((error) => {
+    console.log(error.message);
+  });

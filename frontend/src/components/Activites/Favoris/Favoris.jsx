@@ -1,14 +1,11 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 
 
 const Favoris = () => {
-  useEffect(() => {
-console.log('Ready');
-alert('Ready')
-}, []);
+
   return (
     <div >
-      <h1 className='z-50 text-8xl'>Favoris</h1></div>
+      <h1 className='z-50 text-xl'>Favoris</h1></div>
   )
 }
 

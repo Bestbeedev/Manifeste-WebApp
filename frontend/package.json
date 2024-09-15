@@ -7,17 +7,20 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "database": "json-server --watch db.json --port 5000 "
   },
   "dependencies": {
     "autoprefixer": "^10.4.20",
     "axios": "^1.7.3",
+    "json-server": "1.0.0-beta.2",
     "postcss": "^8.4.41",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.2.1",
     "react-player": "^2.16.0",
     "react-router-dom": "^6.26.0",
+    "react-toastify": "^10.0.5",
     "tailwindcss": "^3.4.7"
   },
   "devDependencies": {

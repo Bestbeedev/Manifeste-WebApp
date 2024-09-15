@@ -25,22 +25,32 @@
  
 }
 
+
 body{
   font-family: 'Poppins';
-  background:hsl(210, 14%, 7%); 
+  background:hsl(210, 14%, 7%);
   margin: 0;
   padding:0;
-  font-size: 13px;
+  font-size: 14px;
+  line-height: 20px;
   @apply h-screen w-screen 
-
 }
 
 
 .sidebar{
-  /* background: #191c24; */
-  background-color: rgb(15 23 42/var(--tw-bg-opacity));
+  background: #191c24; 
+  /* background-color: rgb(15 23 42/var(--tw-bg-opacity)); */
 }
 
+.primary{
+  background: #191c24;
+}
+.secondary{
+  background:#1c2029;
+}
+.tertiary{
+  background:#242a34;
+}
 .title{
   color:var(--bg-palette-primary-400) ;
 }
@@ -78,9 +88,13 @@ body{
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #2563eb;
+  background-color: #242a34;
   height: 1vh;
 }
 .activeBtn{
   @apply bg-blue-600 !important
+}
+
+.filtersClass{
+  background:hsl(210, 14%, 7%);
 }

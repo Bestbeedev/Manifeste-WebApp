@@ -17,11 +17,14 @@ import Welcome from "./Pages/Welcome.jsx";
 import Error404 from "./Errors/Error404.jsx";
 import App from "./App.jsx";
 import VideoPlayer from "./components/VideoPlayer/VideoPlayer.jsx";
+import { UserContextProvider } from "./Context/User.Context/UserContext.jsx";
+import VideoManagement from "./components/ManagementPost/VideoManagement.jsx";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement:<Error404/>,
     children: [
       {
         path: "/",
@@ -31,10 +34,18 @@ export const router = createBrowserRouter([
         path: "/login",
         element: <Login />,
       },
+      {
+        path: "/logout",
+        element: <Login />,
+      },
 
       {
         path: "/signup",
         element: <Signup />,
+      },
+      {
+        path: "/management-upload-videos",
+        element: <VideoManagement />,
       },
       {
         path: "/about/faqs",
@@ -73,11 +84,17 @@ export const router = createBrowserRouter([
         element: <Serviteurs />,
       },
       {
-        path: "/videos/media1",
+        path: "/videos",
         element: <VideoPlayer />,
+        children:[
+          {
+            path: "/videos/:videoId",
+            element: <VideoPlayer />,
+          },
+        ]
       },
       {
-        path: "*",
+        path: '*',
         element: <Error404 />,
       },
     ],
@@ -86,6 +103,8 @@ export const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
+    <UserContextProvider>
     <RouterProvider router={router} />
+    </UserContextProvider>
   </React.StrictMode>
 );

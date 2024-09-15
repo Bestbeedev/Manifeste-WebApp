@@ -10,10 +10,11 @@ const useFocus = () => {
 
   const handleFocus = (input, span) => {
     input.current.addEventListener("focus", () => {
-      span.current.style.border = "1px solid #1d4ed8";
+      span.current.style.border = "1px solid #135029 ";
     });
   };
-
+  
+  //hsl(210, 100%, 60%)#1c2029
   const cleanUpListener = (params) => {
     if (params) {
       params.removeEventListener("focus", handleFocus);

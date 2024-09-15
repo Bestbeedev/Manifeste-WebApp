@@ -2,20 +2,20 @@ import React, { useState } from "react";
 import Icons from "../../utilities/Icons";
 import { IoSend } from "react-icons/io5";
 
-const SearchBar = () => {
-  const [data, setData] = useState("");
+const SearchBar = ({onChange,value,onClick}) => {
+
   return (
     <div className="flex w-full space-x-2 ">
-      <span className="w-[80%] bg-slate-800 p-2 rounded-md shadow-md">
+      <span className="w-full bg-[#242a34] p-2 rounded-md shadow-md">
         <input
           className="w-full outline-none px-3 border-none bg-transparent"
           placeholder="Rechercher"
           type="text"
-          onChange={(e) => setData(e.target.value)}
-          value={data}
+          onChange={onChange}
+          value={value}
         />
       </span>
-      <button className="bg-rose-500 p-2 rounded-md 
+      <button onSubmit={onClick} onClick={onClick} className="bg-rose-500 p-2 rounded-md 
       items-center shadow-md" type="submit">
         <Icons
           iconType={<IoSend className=" " size={20} />}
